@@ -40,3 +40,4 @@ SSG > Staatic site generation
 * Build do projeto
     * ``yarn build`` Gera uma build de produção do projeto 
     * ``yarn start`` Inicia a build do projeto
+* ``yarn add axios`` Adiciona o axios para requisições a API
