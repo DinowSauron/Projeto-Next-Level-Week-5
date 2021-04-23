@@ -59,9 +59,11 @@ export async function getServerSideProps(){
 import {GetStaticProps} from "next";
 import { api } from "../services/api";
 import Image from "next/image";
+import Link from "next/link";
 import { format, parseISO} from "date-fns";
 import ptBR from "date-fns/locale/pt-BR";
 import { convertSecondsToTime } from "../misc/convertSecondsToTime";
+import {useRouter} from "next/router";
 
 import styles from "../styles/home.module.scss";
 
@@ -74,7 +76,6 @@ type Episode = {
   publishedAt: string,
   duration: number,
   durationString: string,
-  description: string,
   url: string,
 }
 
@@ -84,6 +85,7 @@ type HomeProps = {
 }
 
 export default function Home(props: HomeProps) {
+
   // console.log(props.allEpisodes)
   
   return (
@@ -103,8 +105,12 @@ export default function Home(props: HomeProps) {
                   alt={episode.title}
                 />
 
-                <div className={styles.episodeDetails}>
-                  <a href="">{episode.title}</a>
+                <div className={styles.episodeDetails} >
+                  <span>
+                    <Link href={`/episodes/${episode.id}`}>
+                      <a>{episode.title}</a>
+                    </Link>
+                  </span>
                   <p>{episode.members}</p>
                   <span>{episode.publishedAt}</span>
                   <span>{episode.durationString}</span>
@@ -123,12 +129,14 @@ export default function Home(props: HomeProps) {
 
           <table cellSpacing={0}>
             <thead>
-              <th></th>
-              <th>Podcast</th>
-              <th>Integrantes</th>
-              <th>Data</th>
-              <th>Duração</th>
-              <th></th>
+              <tr>
+                <th></th>
+                <th>Podcast</th>
+                <th>Integrantes</th>
+                <th>Data</th>
+                <th>Duração</th>
+                <th></th>
+              </tr>
             </thead>
             <tbody>
               {props.allEpisodes.map(episode => {
@@ -143,7 +151,9 @@ export default function Home(props: HomeProps) {
                       objectFit="cover"/>
                     </td>
                     <td>
-                      <a href="">{episode.title}</a>
+                      <Link href={`/episodes/${episode.id}`}>
+                        <a>{episode.title}</a>
+                      </Link>
                     </td>
                     <td>{episode.members}</td>
                     <td style={{width: 95}}>{episode.publishedAt}</td>
@@ -183,7 +193,6 @@ export const getStaticProps: GetStaticProps = async () => {
       publishedAt: format(parseISO(episode.published_at), "d MMM yy", {locale: ptBR}),
       duration: Number(episode.file.duration),
       durationString: convertSecondsToTime(Number(episode.file.duration)),
-      description: episode.description,
       url: episode.file.url,
     };
   })
