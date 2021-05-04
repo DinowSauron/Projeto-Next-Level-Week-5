@@ -1,11 +1,12 @@
 import { format, parseISO } from "date-fns";
 import { GetStaticPaths, GetStaticProps } from "next";
-import {useRouter} from "next/router";
-import { api } from "../../services/api";
 import Image from "next/image"
 import Link from "next/link"
 import ptBR from "date-fns/locale/pt-BR";
+
+import { api } from "../../services/api";
 import { convertSecondsToTime } from "../../misc/convertSecondsToTime";
+
 import styles from "../../styles/episode.module.scss"
 
 
@@ -53,10 +54,26 @@ export default function Episode(props: EpisodeProps){
 }
 
 export const getStaticPaths: GetStaticPaths = async () => {
-    return {
-        paths: [],
-        fallback: "blocking"
-    }
+    const { data } = await api.get("episodes" , {
+        params: {
+            _limit: 2,
+            _sort: "published_at",
+            _order: "desc",
+        }
+    });
+
+    const paths = data.map(episode => {
+        return {
+            params: {
+                slug: episode.id
+            }
+        }
+    })
+      
+    return { // aula 4 - 04:40 > 24:00 
+        paths,
+        fallback: "blocking" 
+    } //Incrementeal Static Generation
 }
 
 export const getStaticProps: GetStaticProps = async (contex) => {

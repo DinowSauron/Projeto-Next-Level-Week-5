@@ -66,6 +66,8 @@ import { convertSecondsToTime } from "../misc/convertSecondsToTime";
 import {useRouter} from "next/router";
 
 import styles from "../styles/home.module.scss";
+import { useContext } from "react";
+import { PlayerContex } from "../context/PlayerContex";
 
 
 type Episode = {
@@ -85,6 +87,7 @@ type HomeProps = {
 }
 
 export default function Home(props: HomeProps) {
+  const { play } = useContext(PlayerContex);
 
   // console.log(props.allEpisodes)
   
@@ -116,7 +119,7 @@ export default function Home(props: HomeProps) {
                   <span>{episode.durationString}</span>
                 </div>
 
-                <button type="button">
+                <button type="button" onClick={() => play(episode)}>
                   <img src="/play-green.svg" alt="Inmiciar Episodio"/>
                 </button>
               </li>
@@ -161,7 +164,8 @@ export default function Home(props: HomeProps) {
                     <td>
                       <button type="button">
                         <img src="/play-green.svg" alt="Iniciar Episodio"/>
-                      </button></td>
+                      </button>
+                    </td>
                   </tr>
                 )
                 }

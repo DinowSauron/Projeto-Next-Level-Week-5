@@ -41,3 +41,4 @@ SSG > Staatic site generation
     * ``yarn build`` Gera uma build de produção do projeto 
     * ``yarn start`` Inicia a build do projeto
 * ``yarn add axios`` Adiciona o axios para requisições a API
+* ``yarn add rc-slider`` Slider Para react
