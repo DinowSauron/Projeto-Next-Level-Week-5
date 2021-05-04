@@ -26,7 +26,7 @@
         align-items: stretch;  
         width: 90%;
 
-        &.empty{
+        &.empty .progress{
             opacity: .5;
         }
     }
@@ -73,7 +73,7 @@
 .progress{
     display: flex;
     align-items: center;
-    gap: .5rem;
+    gap: 1rem;
     font-size: 0.87rem;
 
     span{
@@ -84,6 +84,7 @@
 
     .slider{
         flex: 1;
+        cursor: pointer;
 
         .emptySlider{
             width: 100%;
@@ -112,12 +113,21 @@
 
         &:disabled {
             cursor: default;
-            // 
+            opacity: 0.5;
         }
-
+        
         &:hover:not(:disabled){
             filter: brightness(0.75);
         }
+
+        &.isActive {
+            filter: invert(0.35) sepia(1) saturate(3) hue-rotate(100deg);
+        }
+
+        &.isActive:hover {
+            filter: brightness(0.65) invert(0.35) sepia(1) saturate(3) hue-rotate(100deg);
+        }
+
 
         &.playButton {
             width: 4rem;

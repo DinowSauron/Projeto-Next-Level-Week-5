@@ -2,12 +2,14 @@ import { format, parseISO } from "date-fns";
 import { GetStaticPaths, GetStaticProps } from "next";
 import Image from "next/image"
 import Link from "next/link"
+import Head from "next/head"
 import ptBR from "date-fns/locale/pt-BR";
 
 import { api } from "../../services/api";
 import { convertSecondsToTime } from "../../misc/convertSecondsToTime";
 
 import styles from "../../styles/episode.module.scss"
+import { usePlayer } from "../../context/PlayerContex";
 
 
 type EpisodeProps = {
@@ -27,8 +29,17 @@ export default function Episode(props: EpisodeProps){
     //const router = useRouter();
     //router.query.slug
 
+    const { play } = usePlayer();
+    const episodeTitle = props.episode.title.replace("|", "     ").substring(0,16)
+
     return (
         <div className={styles.episode}>
+
+            <Head>
+                <title>{episodeTitle} | WorldListener </title>
+            </Head>
+
+
             <div className={styles.thumbnailContainer}>
                 <Link href="/">
                     <button type="button">
@@ -36,7 +47,7 @@ export default function Episode(props: EpisodeProps){
                     </button>
                 </Link>
                 <Image width={700} height={200} src={props.episode.thumbnail} objectFit="cover"/>
-                <button type="button">
+                <button type="button" onClick={() => play(props.episode)}> 
                     <img src="/play.svg" alt="Tocar Episodio"/>
                 </button>
             </div>
