@@ -27,11 +27,19 @@ O Projeto desta semana é o **World Listerner**.
 
 ---
 
-Neste NLW tentei inovar em diversas partes, porem meu foco foi no mais nos codigos, pois achei diversas falhas durante o evento que eu não queria deixar de lado, principalmente nas partes das funções dos botoes do Player de audio, como a de embaralhar e a de passar para o episodio anterior e o proximo, além de alguns ajustes para otrnar o codigo mais amigavel e menos embaraçado, mesmo com meus ajustes, creio que eu ainda conseguiria deixar isso tudo mais legivel.
-Sinceramente a pior parte de todo o evento na minha opinião foi a parte de procurar o proximo episodio e o episodio anterior, no qual fiquei algum tempinho tentando deixar de uma forma bem mais simples, inteligente e mais funcional.
-<br>
-<br>
+## Notas Pessoais:
 
+<p>Neste NLW tentei inovar em diversas partes, porem meu foco foi no mais nos codigos, pois achei diversas falhas durante o evento que eu não queria deixar de lado, principalmente nas partes das funções dos botoes do Player de audio, como a de embaralhar e a de passar para o episodio anterior e o proximo, além de alguns ajustes para otrnar o codigo mais amigavel e menos embaraçado, mesmo com meus ajustes, creio que eu ainda conseguiria deixar isso tudo mais legivel.</p>
+<p>Sinceramente a pior parte de todo o evento na minha opinião foi a parte de procurar o proximo episodio e o episodio anterior, no qual fiquei algum tempinho tentando deixar de uma forma bem mais simples, inteligente e mais funcional.</p>
+
+### NOTES:
+* Gatsby, next.js
+* SSR > server-side rendering
+* SPA > Single Page Application
+* SSG > Staatic site generation
+<br>
+<br>
+---
 ## Comandos utilizados:
 
 ### React Project
@@ -56,10 +64,3 @@ Sinceramente a pior parte de todo o evento na minha opinião foi a parte de proc
 * ``yarn add rc-slider`` Slider Para react
 
 ---
-
-### Notas:
-
-Gatsby, next.js
-SSR > server-side rendering
-SPA > Single Page Application
-SSG > Staatic site generation
