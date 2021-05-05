@@ -39,7 +39,9 @@ O Projeto desta semana é o **World Listerner**.
 * SSG > Staatic site generation
 <br>
 <br>
+
 ---
+
 ## Comandos utilizados:
 
 ### React Project
