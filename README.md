@@ -5,7 +5,27 @@ O Projeto desta semana é o **World Listerner**.
 <img width="100%" src="./world-listener/public/logo.svg">
 </p>
 
+<p align="center">
+   <a href="#Como-Instalar-as-Dependencias">Dependencias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+   <a href="#Comandos-utilizados">Comandos</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+   <a href="/LICENSE">Licença</a>
+</p>
+
+
 **World Listerner** é um aplicativo de podcast onde você pode ouvir os ultimos podcasts lançados que estão em uma base de dados externa de nossa aplicação, nesse aplicativo você consegue ver os participantes, ver descrição usar o player e ter total controle do audio do podcast.
+
+## Fotos Da Aplicação:
+
+<a href="https://github.com/DinowSauron/Projeto-Next-Level-Week-5" target="_blank">
+    <p style="display: flex; margin-top: 20px">
+        <img src="https://user-images.githubusercontent.com/68889180/117478123-23949680-af35-11eb-8cb1-aec7eec5e1b1.png" width="49%">
+        <img src="https://user-images.githubusercontent.com/68889180/117478326-62c2e780-af35-11eb-903a-b1918ef62094.png" width="49%">
+    </p>
+    <p style="display: flex; margin-top: 20px">
+        <img src="https://user-images.githubusercontent.com/68889180/117478424-7ff7b600-af35-11eb-98f0-9f7fb7a0b3f5.png" width="49%">
+        <img src="https://user-images.githubusercontent.com/68889180/117478474-9271ef80-af35-11eb-8403-25d30f79b598.png" width="49%">
+    </p>  
+</a>
 
 
 
