@@ -6,7 +6,6 @@ O Projeto desta semana é o **World Listerner**.
 </p>
 
 <p align="center">
-   <a href="#Como-Instalar-as-Dependencias">Dependencias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
    <a href="#Comandos-utilizados">Comandos</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
    <a href="/LICENSE">Licença</a>
 </p>
