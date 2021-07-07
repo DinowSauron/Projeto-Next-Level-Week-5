@@ -1,15 +1,16 @@
 # Projeto Next Level Week 5
 
 O Projeto desta semana é o **World Listerner**.
-<p>
-<img width="100%" src="./world-listener/public/logo.svg">
-</p>
+<a href="https://github.com/DinowSauron/Projeto-Next-Level-Week-5">
+   <p>
+   <img width="100%" src="./world-listener/public/logo.svg">
+   </p>
+</a>
 
 <p align="center">
    <a href="#Comandos-utilizados">Comandos</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
    <a href="/LICENSE">Licença</a>
 </p>
-
 
 **World Listerner** é um aplicativo de podcast onde você pode ouvir os ultimos podcasts lançados que estão em uma base de dados externa de nossa aplicação, nesse aplicativo você consegue ver os participantes, ver descrição usar o player e ter total controle do audio do podcast.
 
@@ -17,12 +18,12 @@ O Projeto desta semana é o **World Listerner**.
 
 <a href="https://github.com/DinowSauron/Projeto-Next-Level-Week-5" target="_blank">
     <p style="display: flex; margin-top: 20px">
-        <img src="https://user-images.githubusercontent.com/68889180/117478123-23949680-af35-11eb-8cb1-aec7eec5e1b1.png" width="49%">
-        <img src="https://user-images.githubusercontent.com/68889180/117478326-62c2e780-af35-11eb-903a-b1918ef62094.png" width="49%">
+        <img src="https://user-images.githubusercontent.com/68889180/117478123-23949680-af35-11eb-8cb1-aec7eec5e1b1.png" width="49%" alt="Foto Da Aplicação">
+        <img src="https://user-images.githubusercontent.com/68889180/117478326-62c2e780-af35-11eb-903a-b1918ef62094.png" width="49%" alt="Foto Da Aplicação">
     </p>
     <p style="display: flex; margin-top: 20px">
-        <img src="https://user-images.githubusercontent.com/68889180/117478424-7ff7b600-af35-11eb-98f0-9f7fb7a0b3f5.png" width="49%">
-        <img src="https://user-images.githubusercontent.com/68889180/117478474-9271ef80-af35-11eb-8403-25d30f79b598.png" width="49%">
+        <img src="https://user-images.githubusercontent.com/68889180/117478424-7ff7b600-af35-11eb-98f0-9f7fb7a0b3f5.png" width="49%" alt="Foto Da Aplicação">
+        <img src="https://user-images.githubusercontent.com/68889180/117478474-9271ef80-af35-11eb-8403-25d30f79b598.png" width="49%" alt="Foto Da Aplicação">
     </p>  
 </a>
 
@@ -38,6 +39,7 @@ O Projeto desta semana é o **World Listerner**.
 
 ## Como inicializar:
 * Primeiramente, utilize seu CMD.
+* Instale as dependencias com ``yarn install
 * Utilize o comando ``yarn server`` para abrir o servidor contendo os conteudos do podcast.
 * Em seguida utilize o comando ``yarn dev`` em outro CMD, para iniciar o projeto.
 * Os dois servidor necessitam estar ativos ao mesmo tempo 
@@ -48,7 +50,7 @@ O Projeto desta semana é o **World Listerner**.
 
 ## Notas Pessoais:
 
-<p>Neste NLW tentei inovar em diversas partes, porem meu foco foi no mais nos codigos, pois achei diversas falhas durante o evento que eu não queria deixar de lado, principalmente nas partes das funções dos botoes do Player de audio, como a de embaralhar e a de passar para o episodio anterior e o proximo, além de alguns ajustes para otrnar o codigo mais amigavel e menos embaraçado, mesmo com meus ajustes, creio que eu ainda conseguiria deixar isso tudo mais legivel.</p>
+<p>Neste NLW tentei inovar em diversas partes, porem meu foco foi no mais nos códigos, pois achei diversas falhas durante o evento que eu não queria deixar de lado, principalmente nas partes das funções dos botoes do Player de audio, como a de embaralhar e a de passar para o episodio anterior e o proximo, além de alguns ajustes para tornar o código mais amigavel e menos confuso, mesmo com meus ajustes, creio que eu ainda conseguiria deixar isso tudo mais legível.</p>
 <p>Sinceramente a pior parte de todo o evento na minha opinião foi a parte de procurar o proximo episodio e o episodio anterior, no qual fiquei algum tempinho tentando deixar de uma forma bem mais simples, inteligente e mais funcional.</p>
 
 ### NOTES:
@@ -68,7 +70,7 @@ O Projeto desta semana é o **World Listerner**.
 * ``cd world-listener`` Entra no diretorio
 * ``yarn start`` Inicia a aplicação.
 
-### Node Project
+### Next Project
 * ``npx create-next-app world-listener`` Cria o template next.js
 * ``cd world-listener`` Entra no diretorio
 * ``yarn dev`` Entra no ambiente de desenvolvimento (abre o servidor)
